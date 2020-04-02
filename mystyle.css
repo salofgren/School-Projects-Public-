@@ -1,0 +1,66 @@
+body{
+    border: black solid 2px;
+}
+header{
+    background-image: linear-gradient(to right, grey, yellow);
+}
+aside{
+    display: flex;
+    background-color: lightcoral;
+    float: left;
+    height: 500px;
+    width: 200px;
+    margin-left: 1%;
+}
+main{
+    background-image: url(../images/bgdesert.jpg);
+    float: right;
+    width: 800px;
+    height: 500px;
+    margin-right: 1%;
+    position: relative;
+}
+footer{
+    text-align: right;
+    margin-right: 1%;
+    clear: both;
+}
+h1{
+    text-align: center;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+.ul1{
+    display: block;
+    list-style-type: none;
+    border: black solid 1px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-decoration: none;
+}
+.list1{
+    text-align: center;
+    display: inline-block;
+    border: black solid 1px;
+    height: 16.3%;
+    width: 100%
+}
+.list2{
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+}
+.img{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    margin-left: 2%;
+    padding: 3%;
+}
+.assignment :hover{
+    background-color: lightblue;
+}
