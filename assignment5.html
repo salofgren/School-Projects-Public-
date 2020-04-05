@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Payment Submission</title>
+    </head>
+
+    <body style="background-color: purple;">
+        <form action="http://icarus.cs.weber.edu/~sgrayston/payment_summary.php" method="POST">
+            
+            <div style="background-color: white; border: black 20px solid;">
+                <fieldset style="margin: 10px;">
+                    <legend>Card Ownership</legend>
+                    <input type="radio" name="cc_owner" id="personal" value= "personal" checked>
+                    <label for="cc_owner" id="personal">Personal</label>
+                    <input type="radio" name="cc_owner" id="business" value="business">
+                    <label for="cc_owner" id="business">Business</label>
+                </fieldset>
+
+                <div style="margin: 10px;">
+                    <label for="cc_type">Credit Card Type</label>
+                    <select name="cc_type" id="cc_type" required>
+                        <option value="" selected disabled hidden>Card Type</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="American Express">American Express</option>
+                        <option value="Discover">Discover</option>
+                    </select>
+                </div>
+
+                <div style="margin: 10px;">
+                    <label for="cc_no">Card Number</label>
+                    <input type="number" name="cc_no" required>
+                </div>
+
+                <div style="margin: 10px;">
+                    <label for="exp_month">Expiration Date</label>
+                    <select name="exp_month" id="exp_month" required>
+                        <option value="" selected disabled hidden>Month</option>
+                        <option value="Jan">January-01</option>
+                        <option value="Feb">February-02</option>
+                        <option value="Mar">March-03</option>
+                        <option value="Apr">April-04</option>
+                        <option value="May">May-05</option>
+                        <option value="Jun">June-06</option>
+                        <option value="Jul">July-07</option>
+                        <option value="Aug">August-08</option>
+                        <option value="Sep">September-09</option>
+                        <option value="Oct">October-10</option>
+                        <option value="Nov">November-11</option>
+                        <option value="Dec">December-12</option>
+                    </select>
+
+                    <select name="exp_year" id="exp_year" required>
+                        <option value="" selected disabled hidden>Year</option>
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                        <option value="26">2026</option>
+                        <option value="27">2027</option>
+                        <option value="28">2028</option>
+                    </select>
+                </div>
+
+                <div style="margin: 10px;">
+                    <input type="checkbox" name="auth" id="auth" required>
+                    <label for="auth">I confirm that this purchase has been authorized.</label>
+                </div>
+
+                <div style="margin: 10px;">
+                    <a href="https://icarus.cs.weber.edu/~sl40466/">Back to Home</a>
+                </div>
+        
+                <div style="margin: 10px;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+                
+            </div>
+    
+        </form>
+
+    </body>
+
+</html>
