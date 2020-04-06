@@ -3,7 +3,31 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        
         <title>Payment Submission</title>
+
+        <style>
+            select:required:invalid{
+                color: lightgray;
+            }
+            option{
+                color: black;
+            }
+            ::placeholder{
+                color: lightgray;
+                opacity: 1;
+            }
+            :-ms-input-placeholder{
+                color: lightgray;
+            }
+            ::-ms-input-placeholder{
+                color: lightgray;
+            }
+            div{
+                margin: 10px;
+            }
+        </style>
+
     </head>
 
     <body style="background-color: purple;">
@@ -18,9 +42,9 @@
                     <label for="cc_owner" id="business">Business</label>
                 </fieldset>
 
-                <div style="margin: 10px;">
+                <div>
                     <label for="cc_type">Credit Card Type</label>
-                    <select name="cc_type" id="cc_type" required>
+                    <select name="cc_type" id="cc_type" required oninvalid="this.setCustomValidity('Please select a card type.')" oninput="setCustomValidity('')">
                         <option value="" selected disabled hidden>Card Type</option>
                         <option value="Visa">Visa</option>
                         <option value="Mastercard">Mastercard</option>
@@ -29,14 +53,15 @@
                     </select>
                 </div>
 
-                <div style="margin: 10px;">
+                <div>
                     <label for="cc_no">Card Number</label>
-                    <input type="number" name="cc_no" required>
+                    <input type="tel" name="cc_no" inputmode="numeric" pattern="[0-9]{16}" maxlength="16" placeholder="1234567890123456" required 
+                    oninvalid="this.setCustomValidity('Please enter your card number.')" oninput="setCustomValidity('')">
                 </div>
 
-                <div style="margin: 10px;">
+                <div>
                     <label for="exp_month">Expiration Date</label>
-                    <select name="exp_month" id="exp_month" required>
+                    <select name="exp_month" id="exp_month" required oninvalid="this.setCustomValidity('Please select a month.')" oninput="setCustomValidity('')">
                         <option value="" selected disabled hidden>Month</option>
                         <option value="Jan">January-01</option>
                         <option value="Feb">February-02</option>
@@ -52,7 +77,7 @@
                         <option value="Dec">December-12</option>
                     </select>
 
-                    <select name="exp_year" id="exp_year" required>
+                    <select name="exp_year" id="exp_year" required oninvalid="this.setCustomValidity('Please select a year.')" oninput="setCustomValidity('')">
                         <option value="" selected disabled hidden>Year</option>
                         <option value="20">2020</option>
                         <option value="21">2021</option>
@@ -66,16 +91,16 @@
                     </select>
                 </div>
 
-                <div style="margin: 10px;">
-                    <input type="checkbox" name="auth" id="auth" required>
+                <div>
+                    <input type="checkbox" name="auth" id="auth" required oninvalid="this.setCustomValidity('Please check box to confirm this transaction.')" oninput="setCustomValidity('')">
                     <label for="auth">I confirm that this purchase has been authorized.</label>
                 </div>
 
-                <div style="margin: 10px;">
+                <div>
                     <a href="https://icarus.cs.weber.edu/~sl40466/">Back to Home</a>
                 </div>
         
-                <div style="margin: 10px;">
+                <div>
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
                 </div>
