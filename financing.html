@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Financing Options and Calculator</title>
+        <link rel="stylesheet" href="css/finalstyle.css">
+        <script src="javascript/loan.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="title">
+            <div id="header">
+                <h1>Mike's Auto Mart</h1>
+            </div>
+
+            <div id="address">
+                <p id="addy">123 Main Street</p>
+                <p id="addy">Anywhere, UT 88888</p>
+                <p id="addy">Phone: 801-123-4567</p>
+                <p id="addy">Toll Free: 1-888-888-8888</p>
+            </div>
+        </div>
+
+        <div id="navlist">
+            <ul id="hlist">
+                <div id="center">
+                    <a class="link" href="final.html"><li class="list1" id="noselect">Home</li></a>
+                    <a class="link" href="inventory.html"><li class="list1" id="noselect">Inventory</li></a>
+                    <li class="list1" id="default">Financing</li>
+                    <a class="link" href="about.html"><li class="list1" id="noselect">About Us</li></a>
+                </div>
+            </ul>
+        </div>
+
+        <div id="finance">
+            <ul id="bank">
+                <li id="banklist"><a href="https://www.wellsfargo.com/">Wells Fargo</a></li>
+                <li id="banklist"><a href="https://www.americafirst.com/">America First Credit Union</a></li>
+                <li id="banklist"><a href="https://www.macu.com/">Mountain America Credit Union</a></li>
+                <li id="banklist"><a href="https://www.bankofamerica.com/">Bank of America</a></li>
+            </ul>
+        </div>
+
+        <form name="loan">
+            <div id="calculator">
+                <h1>Loan Information</h1>
+                <div id="forms">
+                    <label for="years">Years:</label>
+                    <input type="number" name="years" id="years" inputmode="numeric">
+                </div>
+                <div id="forms">
+                    <label for="interest">Interest Rate:</label>
+                    <input type="number" name="interest" id="interest" inputmode="numeric">
+                </div>
+                <div id="forms">
+                    <label for="amount">Loan Amount:</label>
+                    <input type="number" name="amount" id="amount" inputmode="numeric">
+                </div>
+                <div id="button">
+                    <button id="submit" onclick="calculate(); return false">Calculate</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <h1>Loan Details</h1>
+                <div id="forms">
+                    <label for="monthly">Monthly Payment:</label>
+                    <input type="text" name="monthly" id="monthly" disabled>
+                </div>
+                <div id="forms">
+                    <label for="pi">P/I:</label>
+                    <input type="text" name="pi" id="pi" disabled>
+                </div>
+            </div>
+        </form>
+    </body>
+
+</html>

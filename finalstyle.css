@@ -1,0 +1,190 @@
+p{
+    margin: auto;
+}
+h1{
+    margin: auto;
+}
+body{
+    background-color: lightblue;
+}
+#title{
+    margin-left: 5%;
+}
+#header{
+    margin: 0px 0px 0px 15%;
+    float: left;
+    clear: right;
+    font-size: 50px;
+}
+#address{
+    margin: 0px 25% 0px 0px;
+    font-size: 25px;
+    float: right;
+}
+#navlist{
+    clear: both;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+#hlist{
+    margin: 0px;
+    padding: 0px;
+}
+.list1{
+    text-align: center;
+    font-size: 40px;
+    border: 2px black solid;
+    height: 50px;
+    width: 440px;
+    display: inline-block;
+    list-style: none;
+}
+#noselect:hover{
+    color: white;
+}
+#center{
+    display: table;
+}
+#default{
+    background-color: black;
+    color: white;
+}
+#noselect{
+    color: black;
+}
+.link :hover{
+    background-color: blue;
+}
+#info{
+    margin: 5% 0% 0% 2.5%;
+    float: left;
+}
+#inner{
+    text-align: center;
+}
+#company{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+#img{
+    margin-top: 2%;
+    margin-right: 5%;
+    float: right;
+}
+#deal1{
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    clear: both;
+    margin-left: 6%;
+}
+#deal2{
+    text-align: center;
+    clear: right;
+    float: left;
+    font-size: 20px;
+    margin-left: 10%;
+}
+#car{
+    float: left;
+}
+#pic{
+    margin: 5px;
+}
+#carlist{
+    list-style: none;
+}
+#price{
+    float: left;
+    margin-left: 20%;
+}
+#carprice{
+    margin-top: 0px;
+    font-size: 80px;
+    list-style: none;
+}
+#pricelist{
+    margin-top: 0px;
+    clear: both;
+    margin-bottom: 30px;
+}
+#desc{
+    float: right;
+}
+#cardesc{
+    list-style: none;
+}
+#desclist{
+    background-color: lightcyan;
+    border: 1px black solid;
+    margin-bottom: 10px;
+    height: 110px;
+    overflow: auto;
+}
+#finance{
+    float: left;
+    margin-top: 5%;
+}
+#bank{
+    list-style: none;
+}
+#banklist{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 20%;
+}
+#calculator{
+    margin-right: 20%;
+    margin-top: 5%;
+    float: right;
+    border: 1px black solid;
+    background-color: lightcyan;
+    display: table;
+    width: 420px;
+    height: 420px;
+}
+#forms{
+    display: table-row;
+}
+#button{
+    display: table-row;
+}
+#submit{
+    margin-left: 40px;
+}
+label{
+    display: table-cell;
+}
+input{
+    display: table-cell;
+}
+#contactform{
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 1px black solid;
+    background-color: lightcyan;
+    display: table;
+    width: 37%;
+    height: 600px;
+}
+#asterisk{
+    color: red;
+}
+#comm{
+    font-size: 12px;
+    width: 300px;
+    height: 100px;
+    word-wrap: break-word;
+}
+#comment{
+    vertical-align: middle;
+    height: 100px;
+}
+#emails{
+    list-style: none;
+    margin-top: 5%;
+    float: right;
+    font-size: 50px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Random Number Game</title>
+    </head>
+
+    <body style="background-color: purple;" onload="genNumber()">
+        <h1>Guess a number 1-100</h1>
+        <form name="game" autocomplete="off">
+            <div>
+                <label for="guess" style="font-size: 50px;">Your Guess</label>
+                <input type="text" id="guess" inputmode="numeric" maxlength="3">
+                <button type="button" id="submit" onclick="return numGuess()">Guess</button>
+            </div>
+            <div>
+                <label for="output" style="vertical-align: top; font-size: 30px;">Your guesses</label>
+                <textarea name="output" id="output" cols="41" rows="20" disabled></textarea>
+            </div>
+        </form>
+
+        <script>
+            var x, guess;
+            var count = 0;
+
+            function genNumber(){
+                x = Math.floor(Math.random() * 100 + 1);
+            }
+
+            function numGuess(){
+                guess = document.getElementById("guess").value;
+
+                if (guess > x){
+                    document.getElementById("output").innerHTML += "You guessed " + guess + ". Guess a lower number.\n";
+                    document.getElementById("guess").focus();
+                    count += 1;
+                    return false;
+                }
+                else if (guess < x){
+                    document.getElementById("output").innerHTML += "You guessed " + guess + ". Guess a higher number.\n";
+                    document.getElementById("guess").focus();
+                    count += 1;
+                    return false;
+                }
+                else{
+                    document.getElementById("output").innerHTML += "Guessed correctly in " + count + " guesses. Press F5 to play again.\n";
+                    document.getElementById("submit").disabled = true;
+                    return true;
+                }
+            }
+            
+            
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="css/finalstyle.css">
+        <script src="javascript/validate.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="title">
+            <div id="header">
+                <h1>Mike's Auto Mart</h1>
+            </div>
+
+            <div id="address">
+                <p id="addy">123 Main Street</p>
+                <p id="addy">Anywhere, UT 88888</p>
+                <p id="addy">Phone: 801-123-4567</p>
+                <p id="addy">Toll Free: 1-888-888-8888</p>
+            </div>
+        </div>
+
+        <div id="navlist">
+            <ul id="hlist">
+                <div id="center">
+                    <a class="link" href="final.html"><li class="list1" id="noselect">Home</li></a>
+                    <a class="link" href="inventory.html"><li class="list1" id="noselect">Inventory</li></a>
+                    <a class="link" href="financing.html"><li class="list1" id="noselect">Financing</li></a>
+                    <li class="list1" id="default">About Us</li>
+                </div>
+            </ul>
+        </div>
+
+        <form name="contact" action="http://icarus.cs.weber.edu/~sgrayston/final.php" onsubmit="return validateForm()" method="POST">
+            <div id="contactform">
+                <div>
+                    <p>Please fill in the form and click submit. Required fields (<span id="asterisk">*</span>).</p>
+                </div>
+                <div id="forms">
+                    <label for="fn"><span id="asterisk">*</span>First Name:</label>
+                    <input type="text" name="fn" id="fn">
+                </div>
+                <div id="forms">
+                    <label for="ln"><span id="asterisk">*</span>Last Name:</label>
+                    <input type="text" name="ln" id="ln">
+                </div>
+                <div id="forms">
+                    <label for="eaddr"><span id="asterisk">*</span>Email Address:</label>
+                    <input type="text" name="eaddr" id="eaddr">
+                </div>
+                <div id="forms">
+                    <label for="dphone"><span id="asterisk">*</span>Day Phone:</label>
+                    <input type="text" inputmode="tel" name="dphone" id="dphone" maxlength="9" size="9">
+                </div>
+                <div id="forms">
+                    <label for="hphone">Home Phone:</label>
+                    <input type="text" inputmode="tel" name="hphone" id="hphone" maxlength="9" size="9">
+                </div>
+                <div id="forms">
+                    <label for="saddr">Street Address:</label>
+                    <input type="text" name="saddr" id="saddr">
+                </div>
+                <div id="forms">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div id="forms">
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state" maxlength="2" size="2">
+                </div>
+                <div id="forms">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" inputmode="tel" name="zip" id="zip" maxlength="5" size="5">
+                </div>
+                <div id="forms">
+                    <label id="comment" for="comm">Comments:</label>
+                    <textarea name="comm" id="comm" rows="14" cols="10" maxlength="2000"></textarea>
+                </div>
+                <div id="button">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="emails">
+            <ul id="emails">
+                <li><a href="mailto:finance@mikes.org">Finance Manager:</a> 123-456-7890</li>
+                <li><a href="mailto:sales@mikes.org">Sales Manager:</a> 123-456-7891</li>
+                <li><a href="mailto:service@mikes.org">Service Department:</a> 123-456-7892</li>
+                <li><a href="mailto:parts@mikes.org">Parts Department:</a> 123-456-7893</li>
+            </ul>
+        </div>
+
+    </body>
+
+</html>
